@@ -31,6 +31,152 @@
 					<p>zryvzi"zuvyu"ervyézh</p>
 				</div>
 			</section>
+
+			<section class="window right show" aria-labelledby="t2">
+				<div class="titlebar">
+					<span id="t2">manga_anime.exe</span>
+					<b>–</b>
+					<b>▢</b>
+					<b>✕</b>
+				</div>
+				<div class="window-body">
+					<div class="anime-tools">
+						<input
+							class="anime-search"
+							id="anime-search"
+							type="search"
+							placeholder="Search a manga or anime..."
+							aria-label="Search a manga or anime"
+							autocomplete="off"
+						/>
+						<div class="anime-genres">
+							<button class="anime-genre" type="button" aria-pressed="true">All</button>
+							<button class="anime-genre" type="button" aria-pressed="false">Action</button>
+							<button class="anime-genre" type="button" aria-pressed="false">Fantasy</button>
+							<button class="anime-genre" type="button" aria-pressed="false">Comedy</button>
+							<button class="anime-genre" type="button" aria-pressed="false">Cute</button>
+							<button class="anime-genre" type="button" aria-pressed="false">Romance</button>
+							<button class="anime-genre" type="button" aria-pressed="false">Historical</button>
+						</div>
+					</div>
+
+					<p class="anime-count" id="anime-count" aria-live="polite"></p>
+
+					<div class="anime-grid">
+						<article
+							class="anime-card"
+							tabindex="0"
+							data-title="Chiikawa"
+							data-genres="Cute,Comedy"
+						>
+							<div class="anime-cover">
+								<img src="testimage/chii.gif" alt="Chiikawa" />
+								<div class="anime-summary">
+									Tiny, round creatures deal with jobs, money and monsters in everyday life, and stay
+									cheerful through all of it.
+								</div>
+							</div>
+							<h3>Chiikawa</h3>
+							<div class="anime-tags">
+								<span class="anime-tag">Cute</span>
+								<span class="anime-tag">Comedy</span>
+							</div>
+						</article>
+
+						<article
+							class="anime-card"
+							tabindex="0"
+							data-title="Innocent Rouge"
+							data-genres="Historical"
+						>
+							<div class="anime-cover">
+								<img src="testimage/marie.jpg" alt="Innocent Rouge" />
+								<div class="anime-summary">
+									Set in France at the start of the Revolution, the story follows the Sanson family,
+									the royal executioners. Charles-Henri tries to protect the family's legacy, while his
+									younger sister Marie-Joseph lives freely at Versailles. When her first love Alain is
+									killed, she sets out to take revenge on his killer and on the unjust system behind
+									his death. Innocent Rouge is a manga, the sequel to Innocent.
+								</div>
+							</div>
+							<h3>Innocent Rouge</h3>
+							<div class="anime-tags">
+								<span class="anime-tag">Manga</span>
+								<span class="anime-tag">Historical</span>
+							</div>
+						</article>
+
+						<article
+							class="anime-card"
+							tabindex="0"
+							data-title="Blood Blockade Battlefront"
+							data-genres="Action,Fantasy"
+						>
+							<div class="anime-cover">
+								<img src="testimage/bloodbloclade.gif" alt="Blood Blockade Battlefront" />
+								<div class="anime-summary">
+									A gate to another world opens over New York and the city becomes Hellsalem's Lot.
+									A young photographer with special eyes joins a secret group that keeps the peace.
+								</div>
+							</div>
+							<h3>Blood Blockade Battlefront</h3>
+							<div class="anime-tags">
+								<span class="anime-tag">Action</span>
+								<span class="anime-tag">Fantasy</span>
+							</div>
+						</article>
+
+						<article
+							class="anime-card"
+							tabindex="0"
+							data-title="The Magical Girl and the Evil Lieutenant Used to Be Archenemies"
+							data-genres="Comedy,Fantasy,Romance"
+						>
+							<div class="anime-cover">
+								<img src="testimage/magical.gif" alt="Magical girl anime" />
+								<div class="anime-summary">
+									An evil army invades Earth, and its lieutenant Shun Miller is sent to terrorize a
+									city protected by the magical girl Byakuya Mimori. Instead, he falls for her at
+									first sight and starts showering her with gifts. Then he finds out that her
+									familiar, Angel, has been manipulating her, so he decides to help her live a
+									happier life. A comedy romance between two people on opposite sides of a war.
+								</div>
+							</div>
+							<h3>The Magical Girl and the Evil Lieutenant Used to Be Archenemies</h3>
+							<div class="anime-tags">
+								<span class="anime-tag">Comedy</span>
+								<span class="anime-tag">Fantasy</span>
+								<span class="anime-tag">Romance</span>
+							</div>
+						</article>
+
+						<article
+							class="anime-card"
+							tabindex="0"
+							data-title="Gnosia"
+							data-genres="Fantasy"
+						>
+							<div class="anime-cover">
+								<img src="testimage/gnosia.gif" alt="Gnosia" />
+								<div class="anime-summary">
+									Gnosia is a sci-fi psychological thriller where a spaceship crew is trapped in a deadly time loop.
+									Among them are "Gnosia": shapeshifting aliens pretending to be human to eliminate the crew. To survive, 
+									the passengers must debate and vote to put suspects into cryogenic sleep. The main characters must use each loop to uncover everyone's secrets and find a way 
+									to break the cycle.
+								</div>
+							</div>
+							<h3>Gnosia</h3>
+							<div class="anime-tags">
+								<span class="anime-tag">Fantasy</span>
+							</div>
+						</article>
+					</div>
+
+					<p class="anime-empty" id="anime-empty" hidden>
+						Nothing found. Try another word or genre.
+					</p>
+				</div>
+			</section>
 		</main>
 
 		<div class="taskbar">
@@ -42,5 +188,7 @@
 				<a class="taskbar-link active" href="manga.html">manga</a>
 			</nav>
 		</div>
+
+		<script src="anime.js"></script>
 	</body>
 </html>
